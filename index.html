@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaforo avenida españa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style></style>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/img/unet.png" alt="Logo">
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1> Semaforo avenida españa</h1>
+            <h2 class="desc_title">Descripción</h2>
+            <p>Para este problema decidimos fijarnos en un punto especifico de la ciudad de San Cristóbal en donde encontráramos una zona vehicular con intersecciones de 3 semáforos como lo es la intersección de la avenida Carabobo con la avenida</p>
+            <div class="img_container">
+                <img src="assets/img/av_1.jpg" alt="Avenida España" class="img_desc">
+                <img src="assets/img/av_2.jpg" alt="Avenida España" alt="Logo">
+            </div>
+        </div>
+        <div class="demos_container">
+            <div>
+                <h2>Proceso</h2>
+                <p>Para la realización del diseño es importante tener en cuenta que los semáforos tienen 3 estados o colores:</p>
+                <ul>
+                    <li><strong>Luz Verde:</strong> Tránsito libre de los vehículos.</li>
+                    <li><strong>Luz Amarilla:</strong> Precaución e anticipación de la luz roja.</li>
+                    <li><strong>Luz Roja:</strong> Debe detenerse el tránsito de vehículos</li>
+                </ul>
+
+                <h2>Datos a tener en cuenta</h2>
+                <ol>
+                    <li>Empieza con la luz verde en el semaforo 1 y el resto permanecera en rojo.</li>
+                    <li>Semaforo 1 pasa a amarillo y el resto permanecera en rojo.</li>
+                    <li>Semaforo 1 pasa a rojo, el 2 a verde y el 3 se mantiene en rojo</li>
+                    <li>Semaforo 2 pasa a amarillo y el resto permanecera en rojo.</li>
+                    <li>Semaforo 2 pasa a rojo, el 3 a verde y el 1 se mantiene en rojo</li>
+                    <li>Semaforo 3 pasa a amarillo y el resto permanecera en rojo.</li>
+                    <li>El proceso vuelve al estado inicial</li>
+                </ol>
+            </div>
+            <div>
+                <h2>Demostración</h2>
+                <button class="pushable" id="switch_btn">
+                    <span class="front" id="switch_btn_text">
+                        Off
+                    </span>
+                </button>
+                <div class="tls_container">
+                    <div class="tl_container">
+                        <h3 class="tl_name">Semáforo 1</h3>
+                        <div class="trafficLight" id="tf1">
+                            <span class="red" id="red1"></span>
+                            <span class="yellow" id="yellow1"></span>
+                            <span class="green" id="green1"></span>
+                        </div>
+                    </div>
+                    <div class="tl_container">
+                        <h3 class="tl_name">Semáforo 2</h3>
+                        <div class="trafficLight" id="tf2">
+                            <span class="red" id="red2"></span>
+                            <span class="yellow" id="yellow2"></span>
+                            <span class="green" id="green2"></span>
+                        </div>
+                    </div>
+                    <div class="tl_container">
+                        <h3 class="tl_name">Semáforo 3</h3>
+                        <div class="trafficLight" id="tf3">
+                            <span class="red" id="red3"></span>
+                            <span class="yellow" id="yellow3"></span>
+                            <span class="green" id="green3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

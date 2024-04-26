@@ -1,0 +1,112 @@
+
+main {
+    padding: 12px 33px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    line-height: 1.2;
+    font-family: 'Lato';
+    -webkit-tap-highlight-color: transparent;
+    overflow-x: hidden;
+    font-size: 20px;
+}
+.trafficLight {
+    background-color: black;
+    width: 50px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 10px;
+  }
+  .trafficLight span {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: gray;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .tls_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .tl_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tl_name {
+    margin-bottom: 1em;
+  }
+  .pushable {
+    background: #123c87;
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    display: block; 
+    margin-inline: auto;
+    width: max-content;
+    margin-bottom: 2em;
+  }
+  .front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    color: white;
+  }
+
+  .pushable:active .front {
+    transform: translateY(-2px);
+  }
+  h1 {
+    text-align: center;
+  }
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.logo-container {
+    display: inline-block;
+}
+
+.logo-container img {
+    width: 100px;
+}
+
+.img_container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.demos_container {
+    display: flex;   
+}
+.demos_container > div {
+    width: 50%;
+}
+
+.demos_container > div > h2 {
+    text-align: center;
+}
